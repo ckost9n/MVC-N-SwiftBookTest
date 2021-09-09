@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		3C7B21F426EA48A800926EE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21F326EA48A800926EE3 /* AppDelegate.swift */; };
 		3C7B21F626EA48A800926EE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21F526EA48A800926EE3 /* SceneDelegate.swift */; };
-		3C7B21F826EA48A800926EE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21F726EA48A800926EE3 /* ViewController.swift */; };
-		3C7B21FB26EA48A800926EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B21F926EA48A800926EE3 /* Main.storyboard */; };
+		3C7B21F826EA48A800926EE3 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B21F726EA48A800926EE3 /* CommentsViewController.swift */; };
+		3C7B21FB26EA48A800926EE3 /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B21F926EA48A800926EE3 /* Comments.storyboard */; };
 		3C7B21FD26EA48AD00926EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B21FC26EA48AD00926EE3 /* Assets.xcassets */; };
 		3C7B220026EA48AD00926EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B21FE26EA48AD00926EE3 /* LaunchScreen.storyboard */; };
+		3C7B221126EA58F700926EE3 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B221026EA58F700926EE3 /* CommentCell.swift */; };
+		3C7B221326EA5A8E00926EE3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B221226EA5A8E00926EE3 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C7B21F026EA48A800926EE3 /* MVC-N SwiftBookTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-N SwiftBookTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7B21F326EA48A800926EE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C7B21F526EA48A800926EE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C7B21F726EA48A800926EE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3C7B21FA26EA48A800926EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C7B21F726EA48A800926EE3 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		3C7B21FA26EA48A800926EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Comments.storyboard; sourceTree = "<group>"; };
 		3C7B21FC26EA48AD00926EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C7B21FF26EA48AD00926EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C7B220126EA48AD00926EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C7B221026EA58F700926EE3 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		3C7B221226EA5A8E00926EE3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,89 @@
 		3C7B21F226EA48A800926EE3 /* MVC-N SwiftBookTest */ = {
 			isa = PBXGroup;
 			children = (
-				3C7B21F326EA48A800926EE3 /* AppDelegate.swift */,
-				3C7B21F526EA48A800926EE3 /* SceneDelegate.swift */,
-				3C7B21F726EA48A800926EE3 /* ViewController.swift */,
-				3C7B21F926EA48A800926EE3 /* Main.storyboard */,
-				3C7B21FC26EA48AD00926EE3 /* Assets.xcassets */,
-				3C7B21FE26EA48AD00926EE3 /* LaunchScreen.storyboard */,
-				3C7B220126EA48AD00926EE3 /* Info.plist */,
+				3C7B220A26EA4A8400926EE3 /* Application */,
+				3C7B220B26EA4C8100926EE3 /* Comments */,
+				3C7B220F26EA4D5400926EE3 /* Supporting files */,
 			);
 			path = "MVC-N SwiftBookTest";
+			sourceTree = "<group>";
+		};
+		3C7B220726EA48CC00926EE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C7B220826EA48D900926EE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B21FE26EA48AD00926EE3 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C7B220926EA48E600926EE3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B21F326EA48A800926EE3 /* AppDelegate.swift */,
+				3C7B21F526EA48A800926EE3 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3C7B220A26EA4A8400926EE3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B220726EA48CC00926EE3 /* Model */,
+				3C7B220826EA48D900926EE3 /* View */,
+				3C7B220926EA48E600926EE3 /* Controller */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3C7B220B26EA4C8100926EE3 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B220E26EA4CA400926EE3 /* Model */,
+				3C7B220D26EA4C9E00926EE3 /* View */,
+				3C7B220C26EA4C9400926EE3 /* Controller */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		3C7B220C26EA4C9400926EE3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B21F726EA48A800926EE3 /* CommentsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3C7B220D26EA4C9E00926EE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B21F926EA48A800926EE3 /* Comments.storyboard */,
+				3C7B221026EA58F700926EE3 /* CommentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C7B220E26EA4CA400926EE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B221226EA5A8E00926EE3 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C7B220F26EA4D5400926EE3 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B21FC26EA48AD00926EE3 /* Assets.xcassets */,
+				3C7B220126EA48AD00926EE3 /* Info.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +204,7 @@
 			files = (
 				3C7B220026EA48AD00926EE3 /* LaunchScreen.storyboard in Resources */,
 				3C7B21FD26EA48AD00926EE3 /* Assets.xcassets in Resources */,
-				3C7B21FB26EA48A800926EE3 /* Main.storyboard in Resources */,
+				3C7B21FB26EA48A800926EE3 /* Comments.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,21 +215,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C7B21F826EA48A800926EE3 /* ViewController.swift in Sources */,
+				3C7B221326EA5A8E00926EE3 /* Comment.swift in Sources */,
+				3C7B21F826EA48A800926EE3 /* CommentsViewController.swift in Sources */,
 				3C7B21F426EA48A800926EE3 /* AppDelegate.swift in Sources */,
 				3C7B21F626EA48A800926EE3 /* SceneDelegate.swift in Sources */,
+				3C7B221126EA58F700926EE3 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3C7B21F926EA48A800926EE3 /* Main.storyboard */ = {
+		3C7B21F926EA48A800926EE3 /* Comments.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3C7B21FA26EA48A800926EE3 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Comments.storyboard;
 			sourceTree = "<group>";
 		};
 		3C7B21FE26EA48AD00926EE3 /* LaunchScreen.storyboard */ = {
@@ -288,7 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQYPG8XK25;
-				INFOPLIST_FILE = "MVC-N SwiftBookTest/Info.plist";
+				INFOPLIST_FILE = "MVC-N SwiftBookTest/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQYPG8XK25;
-				INFOPLIST_FILE = "MVC-N SwiftBookTest/Info.plist";
+				INFOPLIST_FILE = "MVC-N SwiftBookTest/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
