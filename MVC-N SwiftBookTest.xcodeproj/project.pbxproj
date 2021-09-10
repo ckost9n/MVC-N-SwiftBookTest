@@ -16,8 +16,9 @@
 		3C7B221126EA58F700926EE3 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B221026EA58F700926EE3 /* CommentCell.swift */; };
 		3C7B221326EA5A8E00926EE3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B221226EA5A8E00926EE3 /* Comment.swift */; };
 		3C7B221626EA645100926EE3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B221526EA645100926EE3 /* NetworkService.swift */; };
-		3C7B221926EA71CF00926EE3 /* CommantNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B221826EA71CF00926EE3 /* CommantNetworkService.swift */; };
+		3C7B221926EA71CF00926EE3 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B221826EA71CF00926EE3 /* CommentNetworkService.swift */; };
 		3C7B221B26EA738A00926EE3 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B221A26EA738A00926EE3 /* GetCommentResponse.swift */; };
+		3C7B221D26EB372500926EE3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B221C26EB372500926EE3 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,9 @@
 		3C7B221026EA58F700926EE3 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		3C7B221226EA5A8E00926EE3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		3C7B221526EA645100926EE3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		3C7B221826EA71CF00926EE3 /* CommantNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommantNetworkService.swift; sourceTree = "<group>"; };
+		3C7B221826EA71CF00926EE3 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
 		3C7B221A26EA738A00926EE3 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
+		3C7B221C26EB372500926EE3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		3C7B220726EA48CC00926EE3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C7B221C26EB372500926EE3 /* NetworkError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,7 +168,7 @@
 		3C7B221726EA71A100926EE3 /* Comment Network Service */ = {
 			isa = PBXGroup;
 			children = (
-				3C7B221826EA71CF00926EE3 /* CommantNetworkService.swift */,
+				3C7B221826EA71CF00926EE3 /* CommentNetworkService.swift */,
 			);
 			path = "Comment Network Service";
 			sourceTree = "<group>";
@@ -244,8 +247,9 @@
 				3C7B21F826EA48A800926EE3 /* CommentsViewController.swift in Sources */,
 				3C7B21F426EA48A800926EE3 /* AppDelegate.swift in Sources */,
 				3C7B21F626EA48A800926EE3 /* SceneDelegate.swift in Sources */,
-				3C7B221926EA71CF00926EE3 /* CommantNetworkService.swift in Sources */,
+				3C7B221926EA71CF00926EE3 /* CommentNetworkService.swift in Sources */,
 				3C7B221B26EA738A00926EE3 /* GetCommentResponse.swift in Sources */,
+				3C7B221D26EB372500926EE3 /* NetworkError.swift in Sources */,
 				3C7B221626EA645100926EE3 /* NetworkService.swift in Sources */,
 				3C7B221126EA58F700926EE3 /* CommentCell.swift in Sources */,
 			);
